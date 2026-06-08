@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Personal Success Blueprint</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="quiz.css">
+
+</head>
+
+<body>
+
+<div class="gradient gradient-1"></div>
+<div class="gradient gradient-2"></div>
+<div class="language-switcher">
+
+    <button onclick="setLanguage('en')">
+        🇺🇸 EN
+    </button>
+
+    <button onclick="setLanguage('es')">
+        🇪🇸 ES
+    </button>
+
+    <button onclick="setLanguage('de')">
+        🇩🇪 DE
+    </button>
+
+</div>
+<div class="quiz-wrapper">
+
+    <div class="quiz-header">
+
+        <div class="logo">
+            Personal Success Blueprint
+        </div>
+
+        <div class="progress-container">
+
+            <div class="progress-bar">
+
+                <div
+                    class="progress-fill"
+                    id="progressFill"
+                ></div>
+
+            </div>
+
+            <div
+                class="progress-text"
+                id="progressText"
+            >
+                Question 1 of 30
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="question-card">
+
+        <div
+            id="questionContainer"
+        >
+
+            <div class="question-category">
+                Interests & Motivation
+            </div>
+
+            <h1 id="questionTitle">
+
+                What topics interest you most?
+
+            </h1>
+
+            <div
+                class="answers"
+                id="answers"
+            >
+
+                <button class="answer-btn">
+                    Business
+                </button>
+
+                <button class="answer-btn">
+                    Technology
+                </button>
+
+                <button class="answer-btn">
+                    Health
+                </button>
+
+                <button class="answer-btn">
+                    Education
+                </button>
+
+                <button class="answer-btn">
+                    Finance
+                </button>
+
+                <button class="answer-btn">
+                    Science
+                </button>
+
+                <button class="answer-btn">
+                    Arts & Design
+                </button>
+
+                <button class="answer-btn">
+                    Sports
+                </button>
+
+            </div>
+
+        </div>
+
+<div class="navigation">
+
+    <button
+        id="resetBtn"
+        class="secondary-btn"
+    >
+        Reset
+    </button>
+
+    <div>
+
+        <button
+            id="backBtn"
+            class="secondary-btn"
+        >
+            Back
+        </button>
+
+        <button
+            id="nextBtn"
+            class="primary-btn"
+        >
+            Continue
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+
+<script src="quiz.js"></script>
+
+</body>
+
+</html>
