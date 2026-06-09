@@ -2753,7 +2753,9 @@ Use both:
 2. Questionnaire Answers
 
 Profile Scores are the primary source of truth.
+Scores should guide interpretation, but should never override clear evidence from written answers.
 
+If written answers reveal important nuance, incorporate that nuance into the analysis.
 Questionnaire answers provide supporting evidence and context.
 
 Never simply repeat answers.
@@ -2892,7 +2894,29 @@ Predict where the person is likely to be in 5 years if no major changes occur.
 Then explain what changes would create a substantially better outcome.
 
 Do not write the report like a personality test.
+Do not prominently reference numerical scores.
 
+The reader should feel that the report was written by a human expert, not generated from a scoring system.
+
+Use scores internally for reasoning, but communicate conclusions in natural language.
+
+Instead of writing:
+
+"Freedom Score: 92"
+
+write:
+
+"Independence appears to be one of the strongest recurring themes throughout the profile."
+
+Instead of writing:
+
+"Execution Score: 0"
+
+write:
+
+"The largest constraint is not capability or intelligence, but consistent implementation and follow-through."
+
+Use the scores to inform conclusions, not as the conclusion itself.
 Avoid phrases such as:
 - "You are the type of person who..."
 - "Based on your answers..."
@@ -2919,8 +2943,20 @@ Consider practical constraints such as:
 
 Do not recommend strategies that require resources the user clearly does not have.
 Do not diagnose medical, psychological or neurological conditions.
-
 You may discuss behavioral patterns and possible explanations, but do not claim the user has a specific condition.
+Distinguish between:
+
+- Capability
+- Motivation
+- Opportunity
+- Execution
+
+Do not assume that someone who is capable is also motivated.
+
+Do not assume that someone who is motivated is able to execute.
+
+Do not assume that someone who wants something currently has the resources to achieve it.
+
 Target length:
 1800-2500 words.
 
