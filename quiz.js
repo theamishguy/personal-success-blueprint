@@ -2780,8 +2780,25 @@ Look for blind spots.
 Look for leverage points that could dramatically improve results.
 
 Do not provide generic career advice.
-
+The report must be practical, intelligent and highly personalized.
 Recommendations must be based on the user's profile.
+CRITICAL:
+
+Every major recommendation must reference evidence from the profile.
+
+Do not make recommendations solely because they are generally considered good advice.
+
+Explain WHY the recommendation fits this specific person.
+
+If recommending a career, business, income strategy or lifestyle, explain which scores and answers support that recommendation.
+
+Avoid generic recommendations such as:
+- "Start a business"
+- "Follow your passion"
+- "Network more"
+- "Learn new skills"
+
+unless you provide a specific justification based on the profile.
 
 When discussing careers or businesses:
 
@@ -2822,6 +2839,11 @@ Avoid corporate buzzwords.
 
 The report must be practical, intelligent and highly personalized.
 
+Focus on the 3 highest-leverage improvements.
+
+Do not overwhelm the user with too many recommendations.
+
+Prioritize changes that would produce the largest improvement in life satisfaction, income, personal growth or long-term success.
 Create the following sections:
 
 ## Executive Summary
@@ -2833,6 +2855,19 @@ Create the following sections:
 ## Strengths That Create Success
 
 ## Hidden Strengths
+## Contradiction Analysis
+
+Identify any contradictions or tensions in the profile.
+
+Examples:
+
+- High Freedom + Low Risk
+- High Learning + Low Execution
+- High Leadership + Low People
+- High Ambition + Low Energy
+- High Creativity + High Need For Stability
+
+Explain how these contradictions may affect real-world outcomes.
 
 ## Growth Opportunities
 
@@ -2849,7 +2884,15 @@ Create the following sections:
 ## Lifestyle Design Recommendations
 
 ## Ikigai Analysis
+## Likely Future Scenario
 
+Based on the profile, predict where this person is likely to be in 5 years if they continue their current trajectory.
+
+Be realistic.
+
+Highlight both positive and negative outcomes.
+
+Then explain what would need to change to achieve a substantially better outcome.
 ## Biggest Risks Over The Next 5 Years
 
 ## Highest-Leverage Changes
@@ -2894,8 +2937,24 @@ Additional Analysis Rules:
 - Explain the likely consequences of those interactions.
 - Prioritize depth over positivity.
 - Give specific recommendations, not generic advice.
----
+Determine:
 
+- Highest Score
+- Second Highest Score
+- Lowest Score
+
+Use these as major anchors for the report.
+
+Explain how the strongest traits support the person.
+
+Explain how the weakest traits may limit progress.
+
+Pay special attention to the interaction between the highest and lowest scores.
+Do not assume that the user's stated goals are optimal.
+
+If the profile suggests a better direction than the user's stated goals, explain why.
+
+Respect the user's goals, but challenge them when appropriate.
 
 
 ## ASSESSMENT DATA
