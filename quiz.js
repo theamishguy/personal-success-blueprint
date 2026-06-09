@@ -85,11 +85,11 @@ es: {
 
     reset: "Reiniciar",
     
-of: "de",
+    of: "de",
 
-placeholder:
-"Escribe tu respuesta aquí...",
-reportLanguage:"Spanish"
+    placeholder:
+    "Escribe tu respuesta aquí...",
+    reportLanguage:"Spanish"
 },
 
 de: {
@@ -128,13 +128,13 @@ de: {
     download:
     "Bericht Herunterladen",
     
-reset: "Zurücksetzen",
+    reset: "Zurücksetzen",
   
-of: "von",
+     of: "von",
 
-placeholder:
-"Gib deine Antwort hier ein...",
-reportLanguage:"German"
+     placeholder:
+    "Gib deine Antwort hier ein...",
+     reportLanguage:"German"
 }
 
 };
@@ -765,6 +765,102 @@ const questions = [
         de:"Mache Ich Sehr Gerne"
     }
 },
+
+{
+category:{
+    en:"Thinking Style",
+    es:"Estilo de Pensamiento",
+    de:"Denkstil"
+},
+type:"challenge",
+challengeType:"thinking",
+question:{
+en:"A machine takes 5 minutes to produce 5 parts. How long would 100 machines take to produce 100 parts?",
+es:"Una máquina tarda 5 minutos en producir 5 piezas. ¿Cuánto tardarían 100 máquinas en producir 100 piezas?",
+de:"Eine Maschine benötigt 5 Minuten, um 5 Teile herzustellen. Wie lange benötigen 100 Maschinen für 100 Teile?"
+},
+options:[
+
+{
+value:"5",
+en:"5 minutes",
+es:"5 minutos",
+de:"5 Minuten"
+},
+
+{
+value:"100",
+en:"100 minutes",
+es:"100 minutos",
+de:"100 Minuten"
+},
+
+{
+value:"500",
+en:"500 minutes",
+es:"500 minutos",
+de:"500 Minuten"
+},
+
+{
+value:"1",
+en:"1 minute",
+es:"1 minuto",
+de:"1 Minute"
+}
+
+]
+},
+
+{
+   category:{
+    en:"Work Style Challenge",
+    es:"Desafío de Estilo de Trabajo",
+    de:"Arbeitsstil-Challenge"
+},
+
+    type:"challenge",
+    challengeType:"workstyle",
+    question:{
+        en:"You inherit a small business. What would you most enjoy doing?",
+        es:"Heredas una pequeña empresa. ¿Qué disfrutarías más haciendo?",
+        de:"Du erbst ein kleines Unternehmen. Was würdest du am liebsten tun?"
+    },
+
+    options:[
+
+        {
+            value:"builder",
+            en:"Creating new products",
+            es:"Crear nuevos productos",
+            de:"Neue Produkte entwickeln"
+        },
+
+        {
+            value:"optimizer",
+            en:"Improving existing systems",
+            es:"Mejorar sistemas existentes",
+            de:"Bestehende Systeme verbessern"
+        },
+
+        {
+            value:"promoter",
+            en:"Marketing and sales",
+            es:"Marketing y ventas",
+            de:"Marketing und Vertrieb"
+        },
+
+        {
+            value:"leader",
+            en:"Managing the team",
+            es:"Gestionar el equipo",
+            de:"Das Team führen"
+        }
+
+    ]
+
+},
+
 {
     category:{
         en:"Business & Money",
@@ -826,62 +922,99 @@ const questions = [
         de:"Geschäft & Geld"
     },
 
-    type:"scale",
-
-    question:{
-        en:"How entrepreneurial do you consider yourself?",
-        es:"¿Qué tan emprendedor te consideras?",
-        de:"Wie unternehmerisch schätzt du dich selbst ein?"
-    },
-
-    minLabel:{
-        en:"Not At All",
-        es:"Para Nada",
-        de:"Überhaupt Nicht"
-    },
-
-    maxLabel:{
-        en:"Extremely",
-        es:"Extremadamente",
-        de:"Extrem"
-    }
-},
-{
-    category:{
-        en:"Business & Money",
-        es:"Negocios y Dinero",
-        de:"Geschäft & Geld"
-    },
-
     type:"single",
 
     question:{
-        en:"Would you rather:",
-        es:"¿Qué preferirías?",
-        de:"Was würdest du bevorzugen?"
+        en:"Which path sounds most appealing?",
+        es:"¿Qué camino te parece más atractivo?",
+        de:"Welcher Weg klingt für dich am attraktivsten?"
     },
 
     options:[
 
         {
-            value:"high_risk_high_reward",
-            en:"Earn More With More Risk",
-            es:"Ganar Más Con Más Riesgo",
-            de:"Mehr Verdienen Mit Mehr Risiko"
+            value:"business_owner",
+            en:"Build my own business",
+            es:"Crear mi propio negocio",
+            de:"Mein eigenes Unternehmen aufbauen"
         },
 
-{
-    value:"low_risk_stability",
+        {
+            value:"specialist",
+            en:"Become a highly-paid specialist",
+            es:"Convertirme en un especialista muy bien pagado",
+            de:"Ein hochbezahlter Spezialist werden"
+        },
 
-    en:"Earn Less With Stability",
+        {
+            value:"creator",
+            en:"Create products or content",
+            es:"Crear productos o contenido",
+            de:"Produkte oder Inhalte erstellen"
+        },
 
-    es:"Ganar Menos Con Estabilidad",
+        {
+            value:"manager",
+            en:"Manage people and organizations",
+            es:"Gestionar personas y organizaciones",
+            de:"Menschen und Organisationen führen"
+        },
 
-    de:"Weniger Einkommen, Dafür Stabilität"
-}
+        {
+            value:"unsure",
+            en:"I'm not sure yet",
+            es:"Aún no estoy seguro",
+            de:"Ich bin mir noch nicht sicher"
+        }
 
     ]
 },
+
+
+
+{
+    category:{
+    en:"Decision Style",
+    es:"Estilo de Decisión",
+    de:"Entscheidungsstil"
+},
+
+    type:"challenge",
+
+    challengeType:"risk",
+
+    question:{
+        en:"Choose one option:",
+        es:"Elige una opción:",
+        de:"Wähle eine Option:"
+    },
+
+    description:{
+        en:"$5,000 guaranteed today OR 50% chance of receiving $15,000",
+        es:"$5.000 garantizados hoy O 50% de probabilidad de recibir $15.000",
+        de:"5.000 $ garantiert heute ODER 50 % Chance auf 15.000 $"
+    },
+
+    options:[
+
+        {
+            value:"guaranteed",
+            en:"$5,000 Guaranteed",
+            es:"$5.000 Garantizados",
+            de:"5.000 $ Garantiert"
+        },
+
+        {
+            value:"risk_reward",
+            en:"50% Chance at $15,000",
+            es:"50% de Probabilidad de $15.000",
+            de:"50 % Chance auf 15.000 $"
+        }
+
+    ]
+
+},
+
 {
     category:{
         en:"Lifestyle",
@@ -986,6 +1119,105 @@ maxLabel:{
 }
 },
 
+{
+category:{
+    en:"Real-World Constraints",
+    es:"Limitaciones del Mundo Real",
+    de:"Reale Einschränkungen"
+},
+type:"single",
+question:{
+en:"Which best describes where you live?",
+es:"¿Cuál describe mejor dónde vives?",
+de:"Welche Beschreibung trifft am besten auf deinen Wohnort zu?"
+},
+options:[
+
+    {
+        value:"major_city",
+        en:"Major City",
+        es:"Ciudad Grande",
+        de:"Großstadt"
+    },
+
+    {
+        value:"medium_city",
+        en:"Medium-Sized City",
+        es:"Ciudad Mediana",
+        de:"Mittelgroße Stadt"
+    },
+
+    {
+        value:"small_town",
+        en:"Small Town",
+        es:"Pueblo Pequeño",
+        de:"Kleinstadt"
+    },
+
+    {
+        value:"rural_area",
+        en:"Rural Area",
+        es:"Zona Rural",
+        de:"Ländliche Gegend"
+    }
+
+]
+},
+{
+    category:{
+    en:"Real-World Constraints",
+    es:"Limitaciones del Mundo Real",
+    de:"Reale Einschränkungen"
+},
+
+    type:"single",
+
+    question:{
+        en:"If you lost your income today, how long could you maintain your current lifestyle?",
+        es:"Si perdieras tus ingresos hoy, ¿cuánto tiempo podrías mantener tu estilo de vida actual?",
+        de:"Wenn du heute dein Einkommen verlieren würdest, wie lange könntest du deinen aktuellen Lebensstil aufrechterhalten?"
+    },
+
+    options:[
+
+        {
+            value:"less_than_1_month",
+            en:"Less than 1 month",
+            es:"Menos de 1 mes",
+            de:"Weniger als 1 Monat"
+        },
+
+        {
+            value:"1_3_months",
+            en:"1-3 months",
+            es:"1-3 meses",
+            de:"1-3 Monate"
+        },
+
+        {
+            value:"3_6_months",
+            en:"3-6 months",
+            es:"3-6 meses",
+            de:"3-6 Monate"
+        },
+
+        {
+            value:"6_12_months",
+            en:"6-12 months",
+            es:"6-12 meses",
+            de:"6-12 Monate"
+        },
+
+        {
+            value:"more_than_1_year",
+            en:"More than a year",
+            es:"Más de un año",
+            de:"Mehr als ein Jahr"
+        }
+
+    ]
+
+},
 
 {
     category:{
@@ -1014,36 +1246,120 @@ maxLabel:{
         de:"Sehr Oft"
     }
 },
+
+
 {
     category:{
-        en:"Personal Growth",
-        es:"Crecimiento Personal",
-        de:"Persönliche Entwicklung"
-    },
+    en:"Productivity & Execution",
+    es:"Productividad y Ejecución",
+    de:"Produktivität & Umsetzung"
+},
 
     type:"single",
 
     question:{
-        en:"What usually stops you from reaching your goals?",
-        es:"¿Qué suele impedirte alcanzar tus metas?",
-        de:"Was hindert dich normalerweise daran, deine Ziele zu erreichen?"
+        en:"Which statement sounds most like you?",
+        es:"¿Qué afirmación se parece más a ti?",
+        de:"Welche Aussage beschreibt dich am besten?"
     },
 
     options:[
 
         {
-            value:"fear",
-            en:"Fear",
-            es:"Miedo",
-            de:"Angst"
+            value:"finishes_most",
+            en:"I finish most things I start",
+            es:"Termino la mayoría de las cosas que empiezo",
+            de:"Ich beende die meisten Dinge, die ich beginne"
         },
 
         {
-            value:"lack_of_time",
-            en:"Lack of Time",
-            es:"Falta de Tiempo",
-            de:"Zeitmangel"
+            value:"finishes_important",
+            en:"I finish important things only",
+            es:"Solo termino las cosas importantes",
+            de:"Ich beende nur wichtige Dinge"
         },
+
+        {
+            value:"starts_many",
+            en:"I start many projects but rarely complete them",
+            es:"Empiezo muchos proyectos pero rara vez los termino",
+            de:"Ich beginne viele Projekte, schließe sie aber selten ab"
+        },
+
+        {
+            value:"loses_momentum",
+            en:"I often lose momentum before finishing",
+            es:"A menudo pierdo impulso antes de terminar",
+            de:"Ich verliere oft die Motivation bevor ich fertig bin"
+        }
+
+    ]
+
+},
+{
+    category:{
+    en:"Productivity & Execution",
+    es:"Productividad y Ejecución",
+    de:"Produktivität & Umsetzung"
+},
+
+    type:"single",
+
+    question:{
+        en:"At the end of a normal day, how much energy do you usually have left?",
+        es:"Al final de un día normal, ¿cuánta energía te queda normalmente?",
+        de:"Wie viel Energie hast du normalerweise am Ende eines Tages übrig?"
+    },
+
+    options:[
+
+        {
+            value:"almost_none",
+            en:"Almost none",
+            es:"Casi nada",
+            de:"Fast keine"
+        },
+
+        {
+            value:"a_little",
+            en:"A little",
+            es:"Un poco",
+            de:"Ein wenig"
+        },
+
+        {
+            value:"moderate",
+            en:"Moderate",
+            es:"Moderada",
+            de:"Mittel"
+        },
+
+        {
+            value:"plenty",
+            en:"Plenty",
+            es:"Mucha",
+            de:"Viel"
+        }
+
+    ]
+
+},
+{
+    category:{
+    en:"Challenges",
+    es:"Desafíos",
+    de:"Herausforderungen"
+},
+
+    type:"single",
+
+    question:{
+        en:"What is currently holding you back the most?",
+        es:"¿Qué es lo que más te está frenando actualmente?",
+        de:"Was hält dich derzeit am meisten zurück?"
+    },
+
+    options:[
 
         {
             value:"money",
@@ -1053,28 +1369,58 @@ maxLabel:{
         },
 
         {
-            value:"distraction",
-            en:"Distraction",
-            es:"Distracción",
-            de:"Ablenkung"
+            value:"time",
+            en:"Time",
+            es:"Tiempo",
+            de:"Zeit"
         },
 
         {
-            value:"lack_of_clarity",
-            en:"Lack of Clarity",
-            es:"Falta de Claridad",
-            de:"Mangelnde Klarheit"
+            value:"focus",
+            en:"Focus",
+            es:"Concentración",
+            de:"Fokus"
         },
 
         {
-            value:"lack_of_confidence",
-            en:"Lack of Confidence",
-            es:"Falta de Confianza",
-            de:"Mangelndes Selbstvertrauen"
+            value:"confidence",
+            en:"Confidence",
+            es:"Confianza",
+            de:"Selbstvertrauen"
+        },
+
+        {
+            value:"opportunities",
+            en:"Opportunities",
+            es:"Oportunidades",
+            de:"Möglichkeiten"
+        },
+
+        {
+            value:"knowledge",
+            en:"Knowledge",
+            es:"Conocimiento",
+            de:"Wissen"
+        },
+
+        {
+            value:"health",
+            en:"Health",
+            es:"Salud",
+            de:"Gesundheit"
+        },
+
+        {
+            value:"family_responsibilities",
+            en:"Family responsibilities",
+            es:"Responsabilidades familiares",
+            de:"Familiäre Verpflichtungen"
         }
 
     ]
+
 },
+
 {
     category:{
         en:"Future Vision",
@@ -1128,6 +1474,27 @@ maxLabel:{
 
 let currentQuestion = 0;
 let answers = {};
+
+let profileScores = {
+
+    builder:0,
+    specialist:0,
+    creator:0,
+    leader:0,
+
+    freedom:0,
+    stability:0,
+
+    execution:0,
+    learning:0,
+
+    risk:0,
+    opportunity:0,
+
+    energy:0,
+    people:0
+
+};
 let currentLanguage =
 localStorage.getItem("language");
 
@@ -1383,6 +1750,118 @@ option;
 
 }
 
+function renderChallenge(question){
+
+    const intro =
+    document.createElement("div");
+
+    intro.style.marginBottom = "25px";
+
+    intro.style.padding = "15px";
+
+    intro.style.borderRadius = "12px";
+
+    intro.style.background =
+    "rgba(109,93,253,.12)";
+
+    intro.style.border =
+    "1px solid rgba(139,124,255,.3)";
+
+   let challengeTitle;
+
+if(currentLanguage === "es"){
+
+    challengeTitle =
+    "🧠 Desafío de Pensamiento";
+
+    if(question.challengeType === "risk"){
+        challengeTitle =
+        "💰 Desafío de Decisión";
+    }
+
+    if(question.challengeType === "workstyle"){
+        challengeTitle =
+        "🎯 Desafío de Estilo de Trabajo";
+    }
+
+}
+else if(currentLanguage === "de"){
+
+    challengeTitle =
+    "🧠 Denk-Challenge";
+
+    if(question.challengeType === "risk"){
+        challengeTitle =
+        "💰 Entscheidungs-Challenge";
+    }
+
+    if(question.challengeType === "workstyle"){
+        challengeTitle =
+        "🎯 Arbeitsstil-Challenge";
+    }
+
+}
+else{
+
+    challengeTitle =
+    "🧠 Quick Thinking Challenge";
+
+    if(question.challengeType === "risk"){
+        challengeTitle =
+        "💰 Decision Challenge";
+    }
+
+    if(question.challengeType === "workstyle"){
+        challengeTitle =
+        "🎯 Work Style Challenge";
+    }
+
+}
+
+  const challengeSubtitle =
+
+currentLanguage === "es"
+? "No lo pienses demasiado."
+
+: currentLanguage === "de"
+? "Nicht zu lange darüber nachdenken."
+
+: "Don't overthink it.";
+
+intro.innerHTML = `
+    <strong>${challengeTitle}</strong>
+    <br>
+    ${challengeSubtitle}
+`;
+
+    answersContainer.appendChild(intro);
+
+    if(question.description){
+
+        const desc =
+        document.createElement("div");
+
+        desc.style.marginBottom =
+        "20px";
+
+        desc.style.color =
+        "#AAB3C5";
+
+        desc.innerText =
+
+        typeof question.description === "object"
+        ?
+        question.description[currentLanguage]
+        :
+        question.description;
+
+        answersContainer.appendChild(desc);
+
+    }
+
+    renderSingle(question);
+
+}
 // ======================================
 // RENDER MULTI
 // ======================================
@@ -1630,6 +2109,17 @@ questions.length
     const question =
     questions[currentQuestion];
 
+const card =
+document.querySelector(".question-card");
+
+card.classList.remove("challenge-card");
+
+if(question.type === "challenge"){
+
+    card.classList.add("challenge-card");
+
+}
+
 questionTitle.innerText =
 
 typeof question.question === "object"
@@ -1675,23 +2165,29 @@ ${percentage}% ${translations[currentLanguage].complete}
     answersContainer.innerHTML =
     "";
 
-    if(question.type === "single"){
+   if(question.type === "single"){
 
-        renderSingle(question);
+    renderSingle(question);
 
-    }
+}
 
-    if(question.type === "multi"){
+if(question.type === "challenge"){
 
-        renderMulti(question);
+    renderChallenge(question);
 
-    }
+}
 
-    if(question.type === "text"){
+if(question.type === "multi"){
 
-        renderText();
+    renderMulti(question);
 
-    }
+}
+
+if(question.type === "text"){
+
+    renderText();
+
+}
 
 if(question.type === "scale"){
 
@@ -1714,11 +2210,321 @@ translations[currentLanguage]
     updateNextButton();
 
 }
+
 // ======================================
 // MD EXPORT
 // ======================================
-function downloadBlueprint(){
+function calculateScores(){
 
+profileScores = {
+
+    builder:0,
+    specialist:0,
+    creator:0,
+    leader:0,
+
+    freedom:0,
+    stability:0,
+
+    execution:0,
+    learning:0,
+
+    risk:0,
+    opportunity:0,
+
+    energy:0,
+
+    people:0
+
+};
+
+    Object.values(answers).forEach(answer => {
+
+        if(answer === "builder"){
+            profileScores.builder += 20;
+        }
+
+        if(answer === "optimizer"){
+            profileScores.specialist += 15;
+        }
+
+        if(answer === "promoter"){
+            profileScores.creator += 10;
+            profileScores.leader += 5;
+        }
+
+        if(answer === "leader"){
+            profileScores.leader += 20;
+        }
+
+        if(answer === "business_owner"){
+            profileScores.builder += 15;
+            profileScores.risk += 10;
+        }
+
+        if(answer === "creator"){
+            profileScores.creator += 15;
+        }
+
+        if(answer === "specialist"){
+            profileScores.specialist += 15;
+        }
+
+        if(answer === "manager"){
+            profileScores.leader += 15;
+        }
+
+        if(answer === "guaranteed"){
+            profileScores.stability += 15;
+        }
+
+        if(answer === "risk_reward"){
+            profileScores.risk += 15;
+        }
+
+        if(answer === "finishes_most"){
+            profileScores.execution += 20;
+        }
+
+        if(answer === "finishes_important"){
+            profileScores.execution += 10;
+        }
+
+        if(answer === "starts_many"){
+            profileScores.execution -= 10;
+        }
+
+        if(answer === "loses_momentum"){
+            profileScores.execution -= 15;
+        }
+
+        if(answer === "plenty"){
+            profileScores.energy += 20;
+        }
+
+        if(answer === "moderate"){
+            profileScores.energy += 10;
+        }
+
+        if(answer === "a_little"){
+            profileScores.energy += 0;
+        }
+
+        if(answer === "almost_none"){
+            profileScores.energy -= 10;
+        }
+
+        if(answer === "freedom"){
+            profileScores.freedom += 10;
+        }
+
+        if(answer === "security"){
+            profileScores.stability += 10;
+        }
+
+
+// =========================
+// LEADER SCORE
+// =========================
+
+if(answer === "leadership"){
+    profileScores.leader += 15;
+}
+
+if(answer === "leading"){
+    profileScores.leader += 15;
+}
+
+if(answer === "manager"){
+    profileScores.leader += 15;
+}
+
+// =========================
+// PEOPLE SCORE
+// =========================
+
+if(answer === "human"){
+    profileScores.people += 10;
+}
+
+if(answer === "emotional_support"){
+    profileScores.people += 15;
+}
+
+if(answer === "empathetic"){
+    profileScores.people += 15;
+}
+
+// =========================
+// SPECIALIST SCORE
+// =========================
+
+if(answer === "technical"){
+    profileScores.specialist += 10;
+}
+
+if(answer === "technical_help"){
+    profileScores.specialist += 15;
+}
+
+if(answer === "alone"){
+    profileScores.specialist += 10;
+}
+
+// =========================
+// CREATOR SCORE
+// =========================
+
+if(answer === "arts"){
+    profileScores.creator += 15;
+}
+
+if(answer === "creative"){
+    profileScores.creator += 15;
+}
+
+// =========================
+// BUILDER SCORE
+// =========================
+
+if(answer === "business_ownership"){
+    profileScores.builder += 15;
+}
+
+if(answer === "business"){
+    profileScores.builder += 10;
+}
+
+// =========================
+// FREEDOM SCORE
+// =========================
+
+if(answer === "freelancing"){
+    profileScores.freedom += 15;
+}
+
+if(answer === "multiple_income_streams"){
+    profileScores.freedom += 15;
+}
+
+// =========================
+// STABILITY SCORE
+// =========================
+
+if(answer === "salary"){
+    profileScores.stability += 15;
+}
+
+    });
+// =========================
+// SCALE QUESTION SCORING
+// =========================
+
+questions.forEach((q,index)=>{
+
+    const answer =
+    answers[index];
+
+    if(typeof answer !== "number"){
+        return;
+    }
+
+    const questionText =
+
+    typeof q.question === "object"
+    ?
+    q.question.en
+    :
+    q.question;
+
+    // Learning
+
+    if(
+    questionText ===
+    "How quickly do you learn new skills?"
+    ){
+
+        profileScores.learning +=
+        answer * 5;
+
+    }
+
+    // Leadership
+
+    if(
+    questionText ===
+    "How much do you enjoy leading other people?"
+    ){
+
+        profileScores.leader +=
+        answer * 3;
+
+    }
+
+    // Freedom
+
+    if(
+    questionText ===
+    "How important is location independence to you?"
+    ){
+
+        profileScores.freedom +=
+        answer * 4;
+
+    }
+
+    // Stability
+
+    if(
+    questionText ===
+    "How important is work-life balance to you?"
+    ){
+
+        profileScores.stability +=
+        answer * 3;
+
+    }
+
+    // Risk
+
+    if(
+    questionText ===
+    "How comfortable are you with uncertainty and risk?"
+    ){
+
+        profileScores.risk +=
+        answer * 4;
+
+    }
+
+    // Execution
+
+    if(
+    questionText ===
+    "How often do you procrastinate?"
+    ){
+
+        profileScores.execution +=
+        (11 - answer) * 4;
+
+    }
+
+});
+    Object.keys(profileScores).forEach(key => {
+
+        profileScores[key] = Math.max(
+            0,
+            Math.min(
+                100,
+                profileScores[key]
+            )
+        );
+
+    });
+
+}
+function downloadBlueprint(){
+calculateScores();
 let reportLanguage =
 translations[currentLanguage]
 .reportLanguage;
@@ -1767,6 +2573,33 @@ Length target:
 1200-2000 words.
 
 ---
+## PROFILE SCORES
+
+Builder Score: ${profileScores.builder}
+Specialist Score: ${profileScores.specialist}
+Creator Score: ${profileScores.creator}
+Leader Score: ${profileScores.leader}
+
+Freedom Score: ${profileScores.freedom}
+Stability Score: ${profileScores.stability}
+
+Execution Score: ${profileScores.execution}
+Learning Score: ${profileScores.learning}
+
+Risk Score: ${profileScores.risk}
+Opportunity Score: ${profileScores.opportunity}
+Energy Score: ${profileScores.energy}
+People Score: ${profileScores.people}
+
+Use these scores as primary indicators.
+
+Use questionnaire answers as supporting evidence.
+
+Do not contradict the scores.
+
+---
+
+
 
 ## ASSESSMENT DATA
 
