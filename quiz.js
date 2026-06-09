@@ -2240,6 +2240,75 @@ profileScores = {
 
     Object.values(answers).forEach(answer => {
 
+if(Array.isArray(answer)){
+
+    answer.forEach(item => {
+
+        if(item === "business"){
+            profileScores.builder += 10;
+        }
+
+        if(item === "technology"){
+            profileScores.specialist += 10;
+        }
+
+        if(item === "science"){
+            profileScores.learning += 10;
+        }
+
+        if(item === "finance"){
+            profileScores.builder += 5;
+            profileScores.risk += 5;
+        }
+
+        if(item === "education"){
+            profileScores.people += 5;
+            profileScores.learning += 5;
+        }
+
+        if(item === "arts"){
+            profileScores.creator += 15;
+        }
+
+        if(item === "family"){
+            profileScores.people += 10;
+            profileScores.stability += 10;
+        }
+
+        if(item === "financial_freedom"){
+            profileScores.freedom += 15;
+        }
+
+        if(item === "learning"){
+            profileScores.learning += 15;
+        }
+
+        if(item === "flexibility"){
+            profileScores.freedom += 10;
+        }
+
+    });
+
+    return;
+}
+if(answer === "analytical"){
+    profileScores.specialist += 10;
+}
+if(answer === "visionary"){
+    profileScores.builder += 10;
+    profileScores.creator += 10;
+}
+if(answer === "persuasive"){
+    profileScores.people += 10;
+    profileScores.leader += 10;
+}
+if(answer === "strategic"){
+    profileScores.builder += 10;
+    profileScores.leader += 5;
+}
+if(answer === "operational"){
+    profileScores.execution += 10;
+}
         if(answer === "builder"){
             profileScores.builder += 20;
         }
@@ -2281,6 +2350,13 @@ profileScores = {
         if(answer === "risk_reward"){
             profileScores.risk += 15;
         }
+// =========================
+// THINKING CHALLENGE
+// =========================
+
+if(answer === "5"){
+    profileScores.learning += 10;
+}
 
         if(answer === "finishes_most"){
             profileScores.execution += 20;
@@ -2290,13 +2366,13 @@ profileScores = {
             profileScores.execution += 10;
         }
 
-        if(answer === "starts_many"){
-            profileScores.execution -= 10;
-        }
+if(answer === "starts_many"){
+    profileScores.execution -= 10;
+}
 
-        if(answer === "loses_momentum"){
-            profileScores.execution -= 15;
-        }
+if(answer === "loses_momentum"){
+    profileScores.execution += 0;
+}
 
         if(answer === "plenty"){
             profileScores.energy += 20;
@@ -2321,6 +2397,51 @@ profileScores = {
         if(answer === "security"){
             profileScores.stability += 10;
         }
+if(answer === "advice"){
+    profileScores.people += 10;
+}
+
+if(answer === "organization"){
+    profileScores.execution += 10;
+}
+
+if(answer === "research_first"){
+    profileScores.learning += 10;
+    profileScores.specialist += 5;
+}
+
+if(answer === "act_immediately"){
+    profileScores.execution += 10;
+    profileScores.risk += 5;
+}
+
+if(answer === "ask_others"){
+    profileScores.people += 10;
+}
+
+if(answer === "create_plan"){
+    profileScores.execution += 15;
+}
+
+if(answer === "multiple_solutions"){
+    profileScores.creator += 10;
+    profileScores.learning += 5;
+}
+if(answer === "achievement"){
+    profileScores.execution += 10;
+}
+
+if(answer === "recognition"){
+    profileScores.leader += 5;
+}
+
+if(answer === "purpose"){
+    profileScores.people += 5;
+}
+
+if(answer === "money"){
+    profileScores.risk += 5;
+}
 
 
 // =========================
@@ -2337,6 +2458,18 @@ if(answer === "leading"){
 
 if(answer === "manager"){
     profileScores.leader += 15;
+}
+
+if(answer === "leader"){
+    profileScores.people += 10;
+}
+
+if(answer === "large_team"){
+    profileScores.people += 10;
+}
+
+if(answer === "small_team"){
+    profileScores.people += 5;
 }
 
 // =========================
@@ -2378,6 +2511,9 @@ if(answer === "alone"){
 if(answer === "arts"){
     profileScores.creator += 15;
 }
+if(answer === "creator"){
+    profileScores.creator += 20;
+}
 
 if(answer === "creative"){
     profileScores.creator += 15;
@@ -2388,11 +2524,11 @@ if(answer === "creative"){
 // =========================
 
 if(answer === "business_ownership"){
-    profileScores.builder += 15;
+    profileScores.builder += 25;
 }
 
 if(answer === "business"){
-    profileScores.builder += 10;
+    profileScores.builder += 15;
 }
 
 // =========================
@@ -2414,8 +2550,74 @@ if(answer === "multiple_income_streams"){
 if(answer === "salary"){
     profileScores.stability += 15;
 }
+if(answer === "income"){
+    profileScores.stability += 10;
+}
 
-    });
+if(answer === "impact"){
+    profileScores.people += 10;
+}
+
+if(answer === "growth"){
+    profileScores.learning += 10;
+}
+
+if(answer === "work_life_balance"){
+    profileScores.stability += 10;
+}
+if(answer === "wealth"){
+    profileScores.builder += 10;
+    profileScores.risk += 5;
+}
+
+if(answer === "personal_growth"){
+    profileScores.learning += 10;
+}
+
+if(answer === "family"){
+    profileScores.people += 10;
+    profileScores.stability += 10;
+}
+// =========================
+// OPPORTUNITY SCORE
+// =========================
+
+if(answer === "major_city"){
+    profileScores.opportunity += 20;
+}
+
+if(answer === "medium_city"){
+    profileScores.opportunity += 15;
+}
+
+if(answer === "small_town"){
+    profileScores.opportunity += 10;
+}
+
+if(answer === "rural_area"){
+    profileScores.opportunity += 5;
+}
+
+if(answer === "less_than_1_month"){
+    profileScores.opportunity += 5;
+}
+
+if(answer === "1_3_months"){
+    profileScores.opportunity += 15;
+}
+
+if(answer === "3_6_months"){
+    profileScores.opportunity += 25;
+}
+
+if(answer === "6_12_months"){
+    profileScores.opportunity += 35;
+}
+
+if(answer === "more_than_1_year"){
+    profileScores.opportunity += 50;
+}
+   });
 // =========================
 // SCALE QUESTION SCORING
 // =========================
@@ -2535,42 +2737,128 @@ ${reportLanguage}
 
 # PERSONAL SUCCESS BLUEPRINT GENERATOR
 
-## AI INSTRUCTIONS
+## # AI INSTRUCTIONS
 
-You are an expert career strategist, business advisor, personality analyst, and personal development coach.
+You are an elite career strategist, business advisor, psychologist, talent assessor, and life-design coach.
 
-Analyze all answers and generate a highly personalized Personal Success Blueprint.
+Your task is to create a highly personalized Personal Success Blueprint.
 
-Do not repeat answers directly.
+The goal is not to flatter the user.
 
-Infer strengths, weaknesses, opportunities, risks, motivations, career fit, business fit, lifestyle fit and growth potential.
+The goal is to provide the most accurate, useful, actionable and insightful assessment possible.
+
+Use both:
+
+1. Profile Scores
+2. Questionnaire Answers
+
+Profile Scores are the primary source of truth.
+
+Questionnaire answers provide supporting evidence and context.
+
+Never simply repeat answers.
+
+Instead, infer patterns, motivations, strengths, weaknesses, opportunities, risks and likely future outcomes.
+
+Analyze how traits interact with each other.
+
+For example:
+
+* High Builder + High Risk = entrepreneurial potential
+* High Learning + Low Execution = chronic over-preparation
+* High Freedom + High Stability = internal conflict between independence and security
+* High Leadership + Low People = authority preference without strong relationship focus
+* High Opportunity + Low Execution = untapped potential
+* High Execution + Low Opportunity = likely to outperform environment
+
+Look for contradictions.
+
+Look for hidden strengths.
+
+Look for blind spots.
+
+Look for leverage points that could dramatically improve results.
+
+Do not provide generic career advice.
+
+Recommendations must be based on the user's profile.
+
+When discussing careers or businesses:
+
+* Consider personality
+* Consider motivations
+* Consider environment
+* Consider financial situation
+* Consider energy level
+* Consider execution ability
+* Consider location constraints
+* Consider risk tolerance
+
+Do not recommend paths that contradict the profile.
+
+If information is missing, state assumptions clearly.
+
+Be honest.
+
+Do not try to be overly positive.
+
+Constructive criticism is encouraged when justified.
+
+Explain why recommendations fit.
+
+Explain why certain paths may fail.
+
+Use concrete examples whenever possible.
+
+Focus on realistic outcomes rather than idealized outcomes.
+
+The report should feel like it was written specifically for this person.
+
+Avoid clichés.
+
+Avoid generic motivational language.
+
+Avoid corporate buzzwords.
+
+The report must be practical, intelligent and highly personalized.
 
 Create the following sections:
 
-## Your Profile
+## Executive Summary
 
-## Top Strengths
+## Psychological Profile
+
+## Core Motivations
+
+## Strengths That Create Success
+
+## Hidden Strengths
 
 ## Growth Opportunities
+
+## Blind Spots & Self-Sabotage Risks
 
 ## Career Matches
 
 ## Business Opportunities
 
-## Income Style Analysis
+## Income Strategy Analysis
 
-## Lifestyle Fit
+## Leadership & Collaboration Style
+
+## Lifestyle Design Recommendations
 
 ## Ikigai Analysis
 
-## Main Risks
+## Biggest Risks Over The Next 5 Years
 
-## 90-Day Action Plan
+## Highest-Leverage Changes
+
+## Personalized 90-Day Action Plan
 
 ## Final Insight
-
 Length target:
-1200-2000 words.
+1500-4000 words.
 
 ---
 ## PROFILE SCORES
@@ -2596,7 +2884,16 @@ Use these scores as primary indicators.
 Use questionnaire answers as supporting evidence.
 
 Do not contradict the scores.
+Additional Analysis Rules:
 
+- If a score is above 70, treat it as a dominant trait.
+- If a score is between 50 and 70, treat it as a significant trait.
+- If a score is between 30 and 50, treat it as a moderate trait.
+- If a score is below 30, treat it as a weak trait.
+- Explain the interaction between the highest and lowest scores.
+- Explain the likely consequences of those interactions.
+- Prioritize depth over positivity.
+- Give specific recommendations, not generic advice.
 ---
 
 
