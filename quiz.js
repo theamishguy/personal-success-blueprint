@@ -2785,7 +2785,11 @@ Recommendations must be based on the user's profile.
 CRITICAL:
 
 Every major recommendation must reference evidence from the profile.
+For every major recommendation, explicitly connect it to:
+- One or more profile scores
+- One or more questionnaire answers
 
+Show the reasoning process.
 Do not make recommendations solely because they are generally considered good advice.
 
 Explain WHY the recommendation fits this specific person.
@@ -2844,7 +2848,7 @@ Focus on the 3 highest-leverage improvements.
 Do not overwhelm the user with too many recommendations.
 
 Prioritize changes that would produce the largest improvement in life satisfaction, income, personal growth or long-term success.
-Create the following sections:
+
 
 Create the following report sections:
 
@@ -2855,6 +2859,7 @@ Create the following report sections:
 ## Hidden Strengths
 ## Contradiction Analysis
 ## Growth Opportunities
+## Leverage Points
 ## Blind Spots & Self-Sabotage Risks
 ## Career Matches
 ## Business Opportunities
@@ -2869,6 +2874,14 @@ Create the following report sections:
 ## Final Insight
 
 Special Section Instructions:
+
+Leverage Points:
+Identify the 1-3 changes that would create the largest improvement in outcomes.
+
+Focus on bottlenecks rather than strengths.
+
+Ask:
+"What is the smallest change that would produce the biggest result?"
 
 Contradiction Analysis:
 Identify tensions and conflicts inside the profile.
@@ -2887,6 +2900,27 @@ Avoid phrases such as:
 
 Instead write as if providing professional coaching and strategic analysis.
 
+Quality Standards:
+
+- Every section must contain profile-specific insights.
+- Avoid repeating the same observation in multiple sections.
+- Each section should add new information.
+- If two sections would contain similar content, combine the insight instead of repeating it.
+- Depth is more important than covering every possible topic.
+
+Reality Check:
+
+Consider practical constraints such as:
+- Available energy
+- Financial runway
+- Current obstacles
+- Location
+- Family responsibilities
+
+Do not recommend strategies that require resources the user clearly does not have.
+Do not diagnose medical, psychological or neurological conditions.
+
+You may discuss behavioral patterns and possible explanations, but do not claim the user has a specific condition.
 Target length:
 1800-2500 words.
 
