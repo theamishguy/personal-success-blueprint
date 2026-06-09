@@ -2846,62 +2846,52 @@ Do not overwhelm the user with too many recommendations.
 Prioritize changes that would produce the largest improvement in life satisfaction, income, personal growth or long-term success.
 Create the following sections:
 
+Create the following report sections:
+
 ## Executive Summary
-
 ## Psychological Profile
-
 ## Core Motivations
-
 ## Strengths That Create Success
-
 ## Hidden Strengths
 ## Contradiction Analysis
-
-Identify any contradictions or tensions in the profile.
-
-Examples:
-
-- High Freedom + Low Risk
-- High Learning + Low Execution
-- High Leadership + Low People
-- High Ambition + Low Energy
-- High Creativity + High Need For Stability
-
-Explain how these contradictions may affect real-world outcomes.
-
 ## Growth Opportunities
-
 ## Blind Spots & Self-Sabotage Risks
-
 ## Career Matches
-
 ## Business Opportunities
-
 ## Income Strategy Analysis
-
 ## Leadership & Collaboration Style
-
 ## Lifestyle Design Recommendations
-
 ## Ikigai Analysis
 ## Likely Future Scenario
-
-Based on the profile, predict where this person is likely to be in 5 years if they continue their current trajectory.
-
-Be realistic.
-
-Highlight both positive and negative outcomes.
-
-Then explain what would need to change to achieve a substantially better outcome.
 ## Biggest Risks Over The Next 5 Years
-
 ## Highest-Leverage Changes
-
 ## Personalized 90-Day Action Plan
-
 ## Final Insight
-Length target:
-1500-4000 words.
+
+Special Section Instructions:
+
+Contradiction Analysis:
+Identify tensions and conflicts inside the profile.
+Explain how these contradictions may help or hinder success.
+
+Likely Future Scenario:
+Predict where the person is likely to be in 5 years if no major changes occur.
+Then explain what changes would create a substantially better outcome.
+
+Do not write the report like a personality test.
+
+Avoid phrases such as:
+- "You are the type of person who..."
+- "Based on your answers..."
+- "Your score suggests..."
+
+Instead write as if providing professional coaching and strategic analysis.
+
+Target length:
+1800-2500 words.
+
+Depth is more important than length.
+Avoid repeating ideas.
 
 ---
 ## PROFILE SCORES
@@ -2950,8 +2940,11 @@ Explain how the strongest traits support the person.
 Explain how the weakest traits may limit progress.
 
 Pay special attention to the interaction between the highest and lowest scores.
-Do not assume that the user's stated goals are optimal.
+When appropriate, challenge assumptions.
 
+If the profile suggests that the user is pursuing goals that conflict with their strengths, motivations or lifestyle preferences, explain the conflict.
+
+Do not automatically validate every goal.
 If the profile suggests a better direction than the user's stated goals, explain why.
 
 Respect the user's goals, but challenge them when appropriate.
